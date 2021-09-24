@@ -1,0 +1,128 @@
+@import "/node_modules/bootstrap/dist/css/bootstrap.min.css";
+html,
+body {
+  overflow-x: hidden;
+  /* Prevent scroll on narrow devices */
+}
+
+nav {
+  height: 10vh;
+}
+
+@media (min-width: 768px) {
+  .navbar-expand-md .navbar-collapse {
+    align-items: flex-end;
+  }
+}
+@media (max-width: 991.98px) {
+  .offcanvas-collapse {
+    position: fixed;
+    top: 56px;
+    /* Height of navbar */
+    bottom: 0;
+    left: 100%;
+    width: 100%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    overflow-y: auto;
+    visibility: hidden;
+    background-color: #343a40;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.3s;
+    transition-property: left, visibility;
+    align-items: center;
+  }
+
+  .offcanvas-collapse.show {
+    left: 0;
+    visibility: visible;
+  }
+}
+.nav-scroller {
+  position: relative;
+  z-index: 2;
+  height: 2.75rem;
+  overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  padding-bottom: 1rem;
+  margin-top: -1px;
+  overflow-x: auto;
+  color: rgba(255, 255, 255, 0.75);
+  text-align: center;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+
+.nav-underline .nav-link {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  font-size: 0.875rem;
+  color: #6c757d;
+}
+
+.nav-underline .nav-link:hover {
+  color: #007bff;
+}
+
+.nav-underline .active {
+  font-weight: 500;
+  color: #343a40;
+}
+
+.img-01 {
+  background-size: cover;
+  width: 100%;
+  height: 90vh;
+  background-image: url("images/hero-mobile.JPG");
+}
+
+.img-02 {
+  background-size: cover;
+  width: 100%;
+  height: 90vh;
+  background-image: url("images/about-mobile.JPG");
+}
+
+.img-03 {
+  background-size: cover;
+  width: 100%;
+  height: 90vh;
+  background-image: url("images/juggle-mobile.JPG");
+}
+
+.img-04 {
+  background-size: cover;
+  width: 100%;
+  height: 90vh;
+  background-image: url("images/crow-mobile.jpg");
+}
+
+@media (min-width: 500px) {
+  .img-01 {
+    background-image: url("images/hero-desktop.JPG");
+    background-position: left center;
+  }
+
+  .img-02 {
+    background-image: url("images/about-desktop.JPG");
+    background-position: right top;
+  }
+
+  .img-03 {
+    background-image: url("images/juggle-desktop.JPG");
+    background-position: right center;
+  }
+
+  .img-04 {
+    background-image: url("images/crow-desktop.jpg");
+    background-position: right center;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
